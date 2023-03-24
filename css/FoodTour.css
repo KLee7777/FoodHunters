@@ -1,0 +1,22 @@
+.padding50 {
+    padding: 50px;
+}
+
+.Featured {
+    text-align: center;
+    object-fit: cover;
+}
+
+.Featured img {
+    width: 100%;
+    height:auto;
+}
+
+.card {
+    text-align: center;
+    height: auto;
+}
+
+.card img {
+    height:700px;
+}
