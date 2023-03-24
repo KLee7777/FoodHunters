@@ -25,19 +25,26 @@
               <li class="nav-item">
                 <a class="nav-link" href="aboutus.html">About Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Forum
-                </a>
+              <li class="btn-group">
+                <button type="button" class="btn">Forums</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="forumMain.html">Main Page</a></li>
+                  <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                  <li><a class="dropdown-item" href="forumHawker.html">Hawkers</a></li>
+                  <li><a class="dropdown-item" href="#">Overseas</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="reservation.html">Food Tours</a>
+                <a class="nav-link" href="FoodTour.html">Food Tours</a>
               </li>
 
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-black" type="submit">Search</button>
+              <img src="images/icons8-search-48.png" alt="Bootstrap" width="35" height="35">
             </form>
           </div>
         </div>
