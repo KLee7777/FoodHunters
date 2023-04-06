@@ -9,21 +9,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="css/forumMain.css" />
+    <link rel="stylesheet" type="text/css" href="css/forumHawker.css" />
 
-    <title>Forum - Main Page</title>
+    <title>Forum - Hawker</title>
 </head>
 
 <body>
 
-    <!-- Insert Header -->
+    <!-- Insert Navbar -->
+    <div id="navbar"></div>
 
-    <header>
+    <!-- Insert Header -->
+    <header class="padLeft30">
         <h1>Hawker food - the best food there is</h1>
     </header>
 
+
+    <!-- Insert page navigation  -->
     <nav aria-label="Page navigation example">
-        <ul class="pagination">
+        <ul class="pagination padLeft30">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
@@ -38,13 +42,113 @@
                 </a>
             </li>
         </ul>
-        <button type="button" class="btn btn-primary btn-sm">Reply to this Topic</button>
+        <!-- Insert Reply Button into Nav container -->
+        <div class="replyButton">
+            <button type="button" class="btn btn-primary btn-sm">Reply to this Topic</button>
+        </div>
     </nav>
 
-    <div class="input-group">
-        <span class="input-group-text">With textarea</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-      </div>
+    <!-- Insert Input post -->
+    <div class="input-group inputPost">
+        <span class="input-group-text">Username</span>
+        <textarea class="form-control" aria-label="With textarea" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, a. Ullam quod commodi aliquid tenetur dignissimos provident dolores id sapiente exercitationem, ratione fugit ipsam quis aperiam culpa totam itaque nulla!</textarea>
+
+        <button class="btn btn-outline-secondary postButton" type="button" id="button-addon2">Post</button>
+    </div>
+
+    
+
+    <!-- Insert Existing Posts -->
+    <div class="posting padLeft30">
+        <div class="card" style="width: 18rem;">
+            <img src="images/forum-avatar-small.svg" class="card-img-top" alt="...">
+            <p class="card-text" >Username</p>
+        </div>
+        <div class="form-group">
+            <!-- <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, minima? Laudantium corporis optio nostrum nisi cupiditate id ducimus mollitia fugit, facilis quos, a odio dignissimos eaque blanditiis debitis nemo error!
+Odio adipisci similique aspernatur! Accusantium, corrupti tempora possimus eos praesentium consectetur ipsa iusto, maxime ducimus ea ab eum blanditiis numquam repellendus magni itaque. Dignissimos beatae quasi, eveniet officiis vitae sint?
+Totam aperiam voluptate vero et laboriosam quas nostrum quam distinctio amet, illo fuga eius aspernatur saepe? Eum, soluta doloremque sint ullam ab quibusdam quis nesciunt porro quam pariatur perferendis earum?
+        </textarea> -->
+            <P class=" textarea paddingLeft10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officiis
+                aliquid tempore delectus soluta accusantium non nesciunt maiores! Pariatur, aliquid? Iste ullam non
+                similique, reiciendis dolores temporibus praesentium esse sint. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Veniam, quasi itaque
+                debitis veritatis temporibus possimus repudiandae non iste numquam eum consequatur nesciunt dolore
+                aperiam architecto laboriosam reprehenderit quos corporis voluptatibus.</P>
+
+            <div class="commentsection">
+                <button type="button" class="btn btn-primary btn-sm">Reply to this post</button>
+
+                <div class="commenticon padRight20">
+                    <img src="images/forum-share-fill.svg" alt="" />
+                    <img src="images/forum-hand-thumbs-up-fill.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="posting padLeft30">
+        <div class="card" style="width: 18rem;">
+            <img src="images/forum-avatar-small.svg" class="card-img-top" alt="...">
+            <p class=>Username</p>
+        </div>
+        <div class="form-group">
+            <!-- <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, minima? Laudantium corporis optio nostrum nisi cupiditate id ducimus mollitia fugit, facilis quos, a odio dignissimos eaque blanditiis debitis nemo error!
+Odio adipisci similique aspernatur! Accusantium, corrupti tempora possimus eos praesentium consectetur ipsa iusto, maxime ducimus ea ab eum blanditiis numquam repellendus magni itaque. Dignissimos beatae quasi, eveniet officiis vitae sint?
+Totam aperiam voluptate vero et laboriosam quas nostrum quam distinctio amet, illo fuga eius aspernatur saepe? Eum, soluta doloremque sint ullam ab quibusdam quis nesciunt porro quam pariatur perferendis earum?
+        </textarea> -->
+            <P class=" textarea paddingLeft10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officiis
+                aliquid tempore delectus soluta accusantium non nesciunt maiores! Pariatur, aliquid? Iste ullam non
+                similique, reiciendis dolores temporibus praesentium esse sint. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Veniam, quasi itaque
+                debitis veritatis temporibus possimus repudiandae non iste numquam eum consequatur nesciunt dolore
+                aperiam architecto laboriosam reprehenderit quos corporis voluptatibus.</P>
+
+            <div class="commentsection">
+                <button type="button" class="btn btn-primary btn-sm">Reply to this post</button>
+
+                <div class="commenticon padRight20">
+                    <img src="images/forum-share-fill.svg" alt="" />
+                    <img src="images/forum-hand-thumbs-up-fill.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="posting padLeft30">
+        <div class="card" style="width: 18rem;">
+            <img src="images/forum-avatar-small.svg" class="card-img-top" alt="...">
+            <p class=>Username</p>
+        </div>
+        <div class="form-group">
+            <!-- <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, minima? Laudantium corporis optio nostrum nisi cupiditate id ducimus mollitia fugit, facilis quos, a odio dignissimos eaque blanditiis debitis nemo error!
+Odio adipisci similique aspernatur! Accusantium, corrupti tempora possimus eos praesentium consectetur ipsa iusto, maxime ducimus ea ab eum blanditiis numquam repellendus magni itaque. Dignissimos beatae quasi, eveniet officiis vitae sint?
+Totam aperiam voluptate vero et laboriosam quas nostrum quam distinctio amet, illo fuga eius aspernatur saepe? Eum, soluta doloremque sint ullam ab quibusdam quis nesciunt porro quam pariatur perferendis earum?
+        </textarea> -->
+            <P class=" textarea paddingLeft10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officiis
+                aliquid tempore delectus soluta accusantium non nesciunt maiores! Pariatur, aliquid? Iste ullam non
+                similique, reiciendis dolores temporibus praesentium esse sint. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Veniam, quasi itaque
+                debitis veritatis temporibus possimus repudiandae non iste numquam eum consequatur nesciunt dolore
+                aperiam architecto laboriosam reprehenderit quos corporis voluptatibus.</P>
+
+            <div class="commentsection">
+                <button type="button" class="btn btn-primary btn-sm">Reply to this post</button>
+
+                <div class="commenticon padRight20">
+                    <img src="images/forum-share-fill.svg" alt="share button" />
+                    <img src="images/forum-hand-thumbs-up-fill.svg" alt="thumbs up button">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -59,9 +163,10 @@
             $("#footer").load("common/footer.html");
 
         });
+    </script>
 
-
+    <!-- Inset Footer -->
+    <div id="footer"></div>
 </body>
-
 
 </html>
