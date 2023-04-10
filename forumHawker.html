@@ -74,23 +74,20 @@
     <!-- Add post button for mobile view -->
     <div class="mobileReply">
         <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addmodal"
-        data-bs-whatever="@post" type="button">Add New Post</button>
+            data-bs-whatever="@post" type="button">Add New Post</button>
     </div>
 
 
 
     <!-- Existing Post 1 -->
-    <div class="posting padLeft30">
+    <div id="forumPost"></div>
+
+    <!-- <div class="posting padLeft30">
         <div class="card-group row col-2 col-sm-2">
             <div class="card text-center " style="width: 18rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-                    class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                </svg>
+                <img id="postImg" src="" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Username</h5>
+                    <h5 id="postUsername" class="card-title">Username</h5>
                     <p class="card-text">Member</p>
                 </div>
                 <div class="card-footer">
@@ -102,14 +99,14 @@
         <div class=" card-group row col-10 col-sm-10 align-right h-100 d-inline-block`">
             <div class="postgroup">
                 <ul class="list-group">
-                    <li class="list-group-item ">Date</li>
+                    <li id="postdate" class="list-group-item ">Date</li> -->
                     <!-- <li class="list-group-item"> -->
-                    <div>
-                        <textarea class="form-control " aria-label="With textarea"
+                    <!-- <div>
+                        <textarea id="postContent" class="form-control " aria-label="With textarea"
                             rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente aut consequatur iste, soluta ab? Maiores, corporis alias! Tempora, vitae? Consectetur tempora molestiae nobis labore aspernatur odit quisquam earum provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ratione, consectetur quibusdam asperiores voluptas expedita excepturi autem veniam alias a natus nobis rerum nostrum accusantium labore nemo modi provident vel.</textarea>
-                    </div>
+                    </div> -->
                     <!-- </li> -->
-                    <li class="list-group-item">
+                    <!-- <li class="list-group-item">
                         <div class="p-1 d-grid gap-2 d-flex justify-content-end">
                             <button class="post-button btn btn-primary btn-sm" data-bs-toggle="modal"
                                 data-bs-target="#replymodal" data-bs-whatever="@mdo" type="button"><svg
@@ -139,11 +136,11 @@
             </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Existing Post 2 -->
-    <div class="posting padLeft30">
+    <!-- <div class="posting padLeft30">
         <div class="card-group row col-2 col-sm-2">
             <div class="card text-center " style="width: 18rem;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
@@ -165,14 +162,14 @@
         <div class=" card-group row col-10 col-sm-10 align-right h-100 d-inline-block`">
             <div class="postgroup">
                 <ul class="list-group">
-                    <li class="list-group-item ">Date</li>
+                    <li class="list-group-item ">Date</li> -->
                     <!-- <li class="list-group-item"> -->
-                    <div>
+                    <!-- <div>
                         <textarea class="form-control " aria-label="With textarea"
                             rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente aut consequatur iste, soluta ab? Maiores, corporis alias! Tempora, vitae? Consectetur tempora molestiae nobis labore aspernatur odit quisquam earum provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ratione, consectetur quibusdam asperiores voluptas expedita excepturi autem veniam alias a natus nobis rerum nostrum accusantium labore nemo modi provident vel.</textarea>
-                    </div>
+                    </div> -->
                     <!-- </li> -->
-                    <li class="list-group-item">
+                    <!-- <li class="list-group-item">
                         <div class="p-1 d-grid gap-2 d-flex justify-content-end">
                             <button class="post-button btn btn-primary btn-sm" data-bs-toggle="modal"
                                 data-bs-target="#replymodal" data-bs-whatever="@mdo" type="button"><svg
@@ -202,11 +199,11 @@
             </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Existing Post 3 -->
-    <div class="posting padLeft30">
+    <!-- <div class="posting padLeft30">
         <div class="card-group row col-2 col-sm-2">
             <div class="card text-center " style="width: 18rem;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
@@ -228,14 +225,14 @@
         <div class=" card-group row col-10 col-sm-10 align-right h-100 d-inline-block`">
             <div class="postgroup">
                 <ul class="list-group">
-                    <li class="list-group-item ">Date</li>
+                    <li class="list-group-item ">Date</li> -->
                     <!-- <li class="list-group-item"> -->
-                    <div>
+                    <!-- <div>
                         <textarea class="form-control " aria-label="With textarea"
                             rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente aut consequatur iste, soluta ab? Maiores, corporis alias! Tempora, vitae? Consectetur tempora molestiae nobis labore aspernatur odit quisquam earum provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ratione, consectetur quibusdam asperiores voluptas expedita excepturi autem veniam alias a natus nobis rerum nostrum accusantium labore nemo modi provident vel.</textarea>
-                    </div>
+                    </div> -->
                     <!-- </li> -->
-                    <li class="list-group-item">
+                    <!-- <li class="list-group-item">
                         <div class="p-1 d-grid gap-2 d-flex justify-content-end">
                             <button class="post-button btn btn-primary btn-sm" data-bs-toggle="modal"
                                 data-bs-target="#replymodal" data-bs-whatever="@mdo" type="button"><svg
@@ -265,7 +262,7 @@
             </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -291,10 +288,10 @@
             // $("#replymodal").load("common/replymodal.html");
             $("#modal").load("common/sharelinkmodal.html");
             $("#footer").load("common/footer.html");
-
         });
     </script>
 
+<script src="js/postController.js"></script>
 
 
 
