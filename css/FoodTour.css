@@ -2,21 +2,28 @@
     padding: 50px;
 }
 
-.Featured {
-    text-align: center;
-    object-fit: cover;
-}
-
-.Featured img {
-    width: 100%;
-    height:auto;
-}
-
 .card {
     text-align: center;
-    height: auto;
+}
+
+
+.card-text {
+    font-weight: bold;
 }
 
 .card img {
-    height:700px;
+    max-width: 100%;
+    height: auto;
+}
+
+.col {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.imageFlexContainer {
+    display: flex;
 }
