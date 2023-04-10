@@ -17,7 +17,7 @@
     padding-right: 20px;
 }
 
-nav {
+.pagenum {
     display: flex;
     width: 100%;
 }
@@ -27,17 +27,8 @@ nav {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 30px;
-}
-
-.input-group,
-.form-group {
-    padding: 30px 30px;
-}
-
-.postButton {
-    background-color: #0d6efd;
-    color: #fff;
+    padding-right: 50px;
+    padding-bottom: 20px;
 }
 
 
@@ -47,13 +38,6 @@ nav {
     padding-bottom: 30px;
 }
 
-.form-group {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding-left: 0;
-}
 
 .posting img {
     width: 30%;
@@ -66,10 +50,6 @@ nav {
     height: 200px;
     width: 200px;
 
-}
-
-button {
-    width: 200px;
 }
 
 .textarea {
@@ -91,7 +71,7 @@ button {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-  
+
 }
 
 .commenticon img {
@@ -101,4 +81,60 @@ button {
 
 .commentsection {
     display: flex;
+}
+
+/* New */
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.post-button {
+    width: auto;
+}
+
+.postgroup {
+    max-height:200px;
+}
+
+.d-grid {
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    
+}
+
+.mobilenavi {
+    display: none;
+}
+
+.mobileReply {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .full-screen {
+        display: none;
+    }
+
+    .replyButton {
+        display: none;
+    }
+
+    .mobileReply {
+        display:grid;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .mobilenavi {
+        display: block;
+    }
+
 }

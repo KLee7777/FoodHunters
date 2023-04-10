@@ -3,5 +3,35 @@
 }
 
 .cardHeader {
-color:dodgerblue;
+    color: dodgerblue;
+
+}
+
+
+.col {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardHeader {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .card-text {
+        display: none;
+    }
+
 }
