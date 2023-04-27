@@ -22,7 +22,7 @@ const post1 = {
     userImageURL: "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif",
     postContent: "Today is a good day",
     postDate: "1/3/2023",
-    postTime: 2050
+    postTime: "2050 hrs",
 };
 
 const post2 = {
@@ -30,7 +30,7 @@ const post2 = {
     userImageURL: "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif",
     postContent: "Today is a bad day",
     postDate: "1/3/2023",
-    postTime: 2100
+    postTime: "2100 hrs"
 };
 
 const post3 = {
@@ -38,7 +38,7 @@ const post3 = {
     userImageURL: "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif",
     postContent: "Today is an alright day",
     postDate: "1/3/2023",
-    postTime: 0800
+    postTime: "0800 hrs"
 };
 
 // 2) Push the product objects into an array
@@ -64,16 +64,17 @@ postList.push(post1, post2, post3);
 function displayPost() {
     let display = "";
     for (let i = 0; i < postList.length; i++) {
-        display += `
-        <div class="posting padLeft30">
+        display +=
+            `
+        <div class="posting padLeft30 padTop20 ">
         <div class="card-group row col-2 col-sm-2">
             <div class="card text-center " style="width: 18rem;">
-                <img id="postImg"  src="${postList[i].userImageURL} alt="">
+                <img id="postImg"  src="${postList[i].userImageURL}" alt="">
                 <div class="card-body">
                     <h5 id="postUsername" class="card-title">${postList[i].userName}</h5>
                     <p class="card-text">Member</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer mobile-screen">
                     <small class="text-body-secondary">Last updated 3 mins ago</small>
                 </div>
             </div>
@@ -82,16 +83,15 @@ function displayPost() {
         <div class=" card-group row col-10 col-sm-10 align-right h-100 d-inline-block">
             <div class="postgroup">
                 <ul class="list-group">
-                    <li id="postdate" class="list-group-item ">${postList[i].postDate}</li>
+                    <li id="postdate" class="list-group-item">${postList[i].postDate}</li>
                     <!-- <li class="list-group-item"> -->
-                    <div>
-                        <textarea id="postContent" class="form-control " aria-label="With textarea"
-                            rows="4">${postList[1].postContent}</textarea>
-                    </div>
+                
+                  <p id="postContent" class="form-control" aria-label="With textarea">${postList[i].postContent}</p>
+                
                     <li class="list-group-item">
                     <div class="p-1 d-grid gap-2 d-flex justify-content-end">
                         <button class="post-button btn btn-primary btn-sm" data-bs-toggle="modal"
-                            data-bs-target="#replymodal" data-bs-whatever="@mdo" type="button"><svg
+                            data-bs-target="#replymodal" data-bs-whatever="@reply" type="button"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-reply" viewBox="0 0 16 16">
                                 <path
@@ -107,12 +107,12 @@ function displayPost() {
                             </svg> Share</button>
 
                         <button class="post-button btn btn-primary btn-sm" data-bs-toggle="" data-bs-target="#"
-                            data-bs-whatever="@mdo" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            data-bs-whatever="@post" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                 height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
                                 <path
                                     d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
                             </svg> Like</button>
-
+                         
                     </div>
                     </div>
                     </li>
@@ -121,44 +121,76 @@ function displayPost() {
             </div>
                     `
 
-        // need from ting the template
-        // <div  class="col-lg-4">
-        //           <div class="card" style="width: 18rem;">
-        //               <img src= ${productList[i].imageURL} class="card-img-top"
-        //                   alt="image">
-        //               <div class="card-body">
-        //                   <h5 class="card-title">${productList[i].name}</h5>
-        //                   <p class="card-text">${productList[i].style}L</p>
-        //                   <a id = item${(i+1)} href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onClick="displayDetails(${i})" >More</a>
-        //               </div>
-        //           </div>
-        //           `
     }
 
     document.querySelector("#forumPost").innerHTML = display;
 }
 
 
-// 4) Add new product to the product list form when user click on the submit button from the product.html
+// 4) Add new post to the forumHawker.html when user click on the submit button on forumHawker.html
 
-function addPost(n, i, c, d, t) {
+function addPost() {
+    console.log("hello world")
+    let postUser = document.querySelector(`#postUser`).value;
+    let postMessage = document.querySelector(`#postMessage`).value;
+    let postImage = "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif"
+    let postDate = new Date();
+    // let postTime = " 2000 hrs";
+    // let postAttachment = document.querySelector(`#attachment`).files;
 
-    const postItem = {
-        userName: n,
-        userImageURL: i,
-        postContent: c,
-        postDate: d,
-        postTime: t,
+    if (postUser == "" || postMessage == "") {
+        alert("Please fill in all required fields.");
+        return;
     }
-    postList.push(postItem)
+
+
+    console.log(postUsername)
+    const postItem = {
+        userName: postUser,
+        userImageURL: postImage,
+        postContent: postMessage,
+        postDate: postDate,
+        // postTime: postTime,
+        // postAttachment: postAttachment,
+    }
+    
+    postList.unshift(postItem)
+    console.log(postList);
+    displayPost();
 }
 
-addPost("Mr. X","http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "This is another post", "10/4/2023", "1049 hrs")
-
-// addPost("Blue T-Shirt", "This is a blue shirt", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Flower Print", "Price", "35")
-
-// addPost("Blue T-Shirt", "This is a blue shirt", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Flower Print", "Price", "35")
-
-// addPost("Blue T-Shirt", "This is a blue shirt", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Flower Print", "Price", "35")
-
 displayPost();
+
+// *** For like button ***
+// const likeBtn = document.querySelector(".like__btn");
+// let likeIcon = document.querySelector("#icon"),
+//   count = document.querySelector("#count");
+
+// let clicked = false;
+
+
+// likeBtn.addEventListener("click", () => {
+//   if (!clicked) {
+//     clicked = true;
+//     likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
+//     count.textContent++;
+//   } else {
+//     clicked = false;
+//     likeIcon.innerHTML = `<i class="far fa-thumbs-up"></i>`;
+//     count.textContent--;
+//   }
+// });
+
+// addPost(`${postUsername}`, "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif",`${postMessage}`, "10/4/2023", " 2000 hrs")
+
+
+// addPost("Mr. X", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "This is another post", "10/4/2023", "1049 hrs")
+
+// addPost(`${userName}`, "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif",`${postContent}`, "10/4/2023", " 2000 hrs")
+
+// addPost("Blue T-Shirt", "This is a blue shirt", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Flower Print", "Price", "35")
+
+// addPost("Blue T-Shirt", "This is a blue shirt", "http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif", "Flower Print", "Price", "35")
+
+
+

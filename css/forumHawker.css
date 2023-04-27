@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
     /* border: 1px solid red; */
+
 }
 
 /* Common styles */
+
+.padTop20 {
+    padding-top: 20px;
+}
 
 .padLeft30 {
     padding-left: 30px;
@@ -36,6 +41,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 30px;
+    background-color:lightgray
 }
 
 
@@ -49,38 +55,11 @@
     justify-content: center;
     height: 200px;
     width: 200px;
-
+    background-color:whitesmoke
 }
 
-.textarea {
-    height: 170px;
-    align-items: top;
-    margin-bottom: 0;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-
-}
-
-.postingtext {
-    border: 1px solid grey;
-    border-radius: 10px;
-}
-
-.commenticon {
-    border: 1pz solid red;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-
-}
-
-.commenticon img {
-    width: 20px;
-    padding-right: 5px;
-}
-
-.commentsection {
-    display: flex;
+.list-group-item {
+    background-color:whitesmoke
 }
 
 /* New */
@@ -95,14 +74,14 @@
 }
 
 .postgroup {
-    max-height:200px;
+    width: auto;
 }
 
 .d-grid {
     padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 20px;
-    
+
 }
 
 .mobilenavi {
@@ -112,11 +91,30 @@
 .mobileReply {
     display: none;
 }
+#postContent {
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.like__btn {
+    padding: 10px 15px;
+    background: #0080ff;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    color: #e8efff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
 
 
 @media screen and (max-width: 768px) {
 
-    .full-screen {
+    .mobile-screen {
         display: none;
     }
 
@@ -125,7 +123,7 @@
     }
 
     .mobileReply {
-        display:grid;
+        display: grid;
         justify-content: center;
         padding-left: 20px;
         padding-right: 50px;
@@ -135,6 +133,25 @@
 
     .mobilenavi {
         display: block;
+    }
+
+    .posting {
+        width: 100%;
+        display: flex;
+      
+    }
+
+    .posting img {
+        width: 30%;
+    
+    }
+
+    .card-group {
+        width: auto;
+    }
+
+    .card-footer {
+        display;
     }
 
 }
