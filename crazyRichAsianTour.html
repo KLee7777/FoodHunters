@@ -15,7 +15,7 @@
     <div id="navbar"></div>
 
     <section>
-        <div class="row padding50">
+        <div class="row padding50 bgColor">
             <div class="col-lg-6">
                 <div class="card">
                     <div><img src="images/CHIJMES.jpg" alt="Crazy Rich Asian"></div>
@@ -34,9 +34,10 @@
                         <h2 class="card-text">$500</h2>
                         <h3>This tour encompasses:</h3>
                         </br>
-                        <li class="card-text">A Ride In a SuperCar</li>
+                        <li class="card-text">A Ride In A Supercar</li>
                         </br>
-                        <p>Take a spin in a supercar like the Lamborghini Gallardo Spyder, McLaren MP4-12C, Lamborghini
+                        <p class="size20">Take a spin in a supercar like the Lamborghini Gallardo Spyder, McLaren
+                            MP4-12C, Lamborghini
                             Huracan, or Ferrari 458 Spider. Relive your Supercar dreams by unleashing the power on the
                             straights of the expressway, or simply cruise along the coastline with the wind in your
                             hair. If you don't have a driver's license, fret not. Relax in the passenger seat and let
@@ -44,26 +45,27 @@
                         </br>
                         <li class="card-text">Movie Locations</li>
                         </br>
-                        <p>Visit the locations featured in the acclaimed Crazy Rich Asians movie. Reminisce the wedding
+                        <p class="size20">Visit the locations featured in the acclaimed Crazy Rich Asians movie.
+                            Reminisce the wedding
                             scenes at CHJIMES, explore Gardens by the Bay and visit the landmarks of Singapore like
                             Marina Bay Sands. Create your own itinerary and experience the lush life of a Crazy Rich
                             Asian.</p>
                         </br>
                         <li class="card-text">Food</li>
                         </br>
-                        <p>Go Eat like a king at Newton Hawker Centre-offers crazy cheap prices. Visit the famous Lau Pa
+                        <p class="size20">Go Eat like a king at Newton Hawker Centre-offers crazy cheap prices. Visit
+                            the famous Lau Pa
                             Sat and tackle local & international favourites from various vendors of multiples cuisines.
                         </p>
                         </br>
-                        <h5>Things to note</h5>
-                        <p class="card-text">All packages are fixed dated, direct entry tickets, unless otherwise stated
+                        <h5 class="card-text">Things to note</h5>
+                        <p>All packages are fixed dated, direct entry tickets, unless otherwise stated
                             that reservation is required. Fixed dated vouchers are valid only on the selected date (and
                             time if applicable) only. Tour groups for the day would depend on the number of bookings.
                             Terms and conditons apply.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Book Now
-                        </button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-bs-whatever="@mdo">
+                                Book Now
+                            </button>
                     </div>
                 </div>
             </div>
@@ -71,27 +73,6 @@
 
         </div>
     </section>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
@@ -104,14 +85,16 @@
         $(document).ready(function () {
             $("#navbar").load("common/navbar.html");
             $("#footer").load("common/footer.html");
-            $("#exampleModal").load("common/submitDetails.html");
+            $("#Modal").load("common/foodTourDetails.html");
         });
 
+        const myModal = document.getElementById
     </script>
 
+    <div id="footer"></div>
+    <div id="Modal"></div>
 </body>
-<div id="footer"></div>
-<div id="exampleModal"></div>
+
 
 
 </html>
